@@ -236,6 +236,13 @@ async function ConvertCurrency(){
     
 }
 
+//Change currency - Convert amount changed to 1 and show converted amount
+function Default(){
+    let BaseNumber=document.querySelector(".basenumber");
+    BaseNumber.value="1";
+    ConvertCurrency();
+}
+
 //add enter key event
 document.addEventListener("keyup", (event) => {
     if (event.key == "Enter") {

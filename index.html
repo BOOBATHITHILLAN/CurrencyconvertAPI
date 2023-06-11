@@ -15,16 +15,16 @@
         <h1 class="text-center">Currency Converter APP</h1> 
         <div class="form-group fw-bold">
             <label for="base" >Base Currency</label>
-             <select class="base form-control">
+             <select class="base form-control"  onchange="Default()">
 
              </select>
              <br><br>
-            <input type="number" class="form-control basenumber" value="1">
+            <input type="number" class="form-control basenumber" oninput="ConvertCurrency()" value="1">
         </div> 
         <br> 
         <div class="form-group fw-bold">
             <label for="target">Target Currency</label>
-             <select class="target form-control">
+             <select class="target form-control" onchange="Default()">
 
              </select>
              <br><br>
